@@ -7,7 +7,7 @@ const UserModel = require("./models/Users")
 
 app.use(express.json());
 app.use(cors());
-mongoose.connect("mongoose link");
+mongoose.connect("mongodb+srv://gego144:12345asd@ActivityTracker.svkva.mongodb.net/Activities?retryWrites=true&w=majority");
 
 app.get("/getUser", async (req,res) => {
     const user = req.body;
